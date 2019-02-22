@@ -1,0 +1,71 @@
+<div class="content">
+    <section class="content-header">
+        <h1>
+         Data Kegiatan
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Master Data</a></li>
+          <li class="active">Kegiatan</li>
+        </ol>
+      </section>
+    <!-- <button type="button" (click)="" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Tambah Data
+    </button> -->
+    <div class="content">
+        <div class="row">
+          <div class="col-xs-12"> 
+            <div class="box">
+              <!-- <div class="box-header">
+                    <a routerLink="/tambah-kegiatan" routerLinkActive="active" class="btn btn-success" role="button">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Tambah Data</a>
+                        </div> -->
+                        <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Kode Kegiatan</th>
+                                <th>Nama Kegiatan</th>
+                                <th>Keluaran</th>
+                                <th>Lokasi Kegiatan</th>
+                                <th>Pelaksanaan</th>
+                                <th>Sasaran Manfaat</th>
+                                <th>Sasaran Renstra</th>
+                                <th>Nama Bidang</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of kegiatan">
+                                <td>{{data.id}}</td>
+                                <td>{{data.kode}}</td>
+                                <td>{{data.nama}}</td>
+                                <td>{{data.keluaran}}</td>
+                                <td>{{data.lokasi}}</td>
+                                <td>{{data.pk}}</td>
+                                <td>{{data.sasmanfaat}}</td>
+                                <td>{{data.sasren}}</td>
+                                <td>{{data.bidang.nama}}</td>
+                                <td>
+                                    <a [routerLink]="['/tahunkegiatan', data.id]" role="button" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                                    </a>&nbsp;
+                                    <a [routerLink]="['/kegiatanupdate', data.id]" role="button" class="btn btn-warning">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                    </a> &nbsp;
+                                    <button (click)="deleteData(data.id)" type="button" class="btn btn-danger">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        <!-- /.content -->
+      </div>
+    </div>

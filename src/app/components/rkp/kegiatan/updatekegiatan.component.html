@@ -1,0 +1,66 @@
+<div class="content">
+    <section class="content-header">
+        <h1>
+         Data Kegiatan
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Master Data</a></li>
+          <li class="active">Kegiatan</li>
+        </ol>
+      </section>
+
+
+<div class="content">
+    <div class="row">
+      <div class="col-xs-12"> 
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Edit Kegiatan</h3>
+            </div>
+                <div class="box-body">
+<form>
+<div class="form-group">
+    <input type="hidden" class="form-control" id="id" name="id" value="{{datakegiatan[0].id}}" [(ngModel)]="datakegiatan[0].id">
+</div>
+<div class="form-group">
+    <label for="nama">Kode Kegiatan</label>
+    <input type="text" class="form-control" id="kode" name="kode" value="{{datakegiatan[0].kode}}" [(ngModel)]="datakegiatan[0].kode">
+</div>
+<div class="form-group">
+    <label for="kodepos">Nama Kegiatan</label>
+    <input type="text" class="form-control" id="nama" name="nama" value="{{datakegiatan[0].nama}}" [(ngModel)]="datakegiatan[0].nama">
+</div>
+<div class="form-group">
+    <label for="kecamatan">Keluaran</label>
+    <input type="text" class="form-control" id="keluaran" name="keluaran" value="{{datakegiatan[0].keluaran}}" [(ngModel)]="datakegiatan[0].keluaran">
+</div>
+<div class="form-group">
+    <label for="kabkot">Lokasi Kegiatan</label>
+    <input type="text" class="form-control" id="lokasi" name="lokasi" value="{{datakegiatan[0].lokasi}}" [(ngModel)]="datakegiatan[0].lokasi">
+</div>
+<div class="form-group">
+    <label for="provinsi">Pelaksanaan</label>
+    <input type="text" class="form-control" id="pk" name="pk" value="{{datakegiatan[0].pk}}" [(ngModel)]="datakegiatan[0].pk">
+</div>
+<div class="form-group">
+    <label for="lwilayah">Sasaran Manfaat</label>
+    <input type="text" class="form-control" id="sasmanfaat" name="sasmanfaat" value="{{datakegiatan[0].sasmanfaat}}" [(ngModel)]="datakegiatan[0].sasmanfaat">
+</div>
+<div class="form-group">
+    <label for="jp">Sasaran Renstra</label>
+    <input type="text" class="form-control" id="sasren" name="sasren" value="{{datakegiatan[0].sasren}}" [(ngModel)]="datakegiatan[0].sasren">
+</div>
+<div class="box-footer">
+<button (click)="updateData()" type="submit" class="btn btn-primary">Submit</button> &nbsp;
+<a routerLink="/kegiatan"><button class="btn btn-primary" > Cancel</button></a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col -->
+</div>
+<!-- /.row -->
+<!-- /.content -->
+</div>

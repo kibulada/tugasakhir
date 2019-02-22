@@ -1,0 +1,73 @@
+<div class="content">
+        <section class="content-header">
+            <h1>
+             Data RKP
+            </h1>
+            <ol class="breadcrumb">
+              <li><a href="#"><i class="fa fa-dashboard"></i> Master Data</a></li>
+              <li class="active">Kegiatan</li>
+            </ol>
+          </section>
+
+
+ <div class="content">
+        <div class="row">
+          <div class="col-xs-12"> 
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Tambah Kegiatan</h3>
+                </div>
+                    <div class="box-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="nama">ID Bidang</label>
+                            <input type="text" class="form-control" id="id" name="id" value="{{dataInput.id_bidang}}" [(ngModel)]="dataInput.id_bidang">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Kode Kegiatan</label>
+                            <input type="text" class="form-control" id="kode" name="kode" [(ngModel)]="dataInput.kode">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Nama Kegiatan</label>
+                            <input type="text" class="form-control" id="nama" name="nama" [(ngModel)]="dataInput.nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Keluaran</label>
+                            <input type="text" class="form-control" id="keluaran" name="keluaran" [(ngModel)]="dataInput.keluaran">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nama">Lokasi Kegiatan</label>
+                            <input type="text" class="form-control" id="lokasi" name="lokasi" [(ngModel)]="dataInput.lokasi">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Pelaksanaan</label>
+                            <input type="number" class="form-control" id="pk" name="pk" [(ngModel)]="dataInput.pk">
+                        
+                            <input type="hidden" class="form-control" id="status" name="status" [(ngModel)]="dataInput.status" value="0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kodepos">Sasaran Manfaat</label>
+                            <input type="text" class="form-control" id="sasmanfaat" name="sasmanfaat" [(ngModel)]="dataInput.sasmanfaat">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Sasaran Renstra</label>
+                            <input type="text" class="form-control" id="sasren" name="sasren" [(ngModel)]="dataInput.sasren">
+                        </div>
+                        
+                        <div class="box-footer">
+                        <button (click)="inputData(dataInput)" type="submit" class="btn btn-primary">Submit</button> &nbsp;
+                        <a routerLink="/rkp"><button class="btn btn-primary" > Cancel</button></a>
+                    </div>
+                    </form> 
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- /.col -->
+</div>
+<!-- /.row -->
+<!-- /.content -->
+</div>
+
